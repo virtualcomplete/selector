@@ -1,0 +1,26 @@
+{
+  "name": "virtualcomplete/selector",
+  "description": "Selector pattern abstract class to manage polymorphism on the user level or run-time arguments.",
+  "keywords": [
+    "laravel",
+    "selector",
+    "design pattern",
+    "polymorphism"
+  ],
+  "homepage": "https://github.com/virtualcomplete/selector",
+  "require": {
+    "php": "^5.4"
+  },
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Devon Bessemer",
+      "email": "devon.b@virtualcomplete.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "VirtualComplete\\Selector\\": ""
+    }
+  }
+}
