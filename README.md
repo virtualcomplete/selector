@@ -1,3 +1,7 @@
+<p align="center">
+<a href="https://travis-ci.org/virtualcomplete/selector"><img src="https://travis-ci.org/virtualcomplete/selector.svg?branch=master" alt="Build Status"></a>
+</p>
+
 # Selector
 
 This is an abstract class that allows you to easily implement the provided selector pattern.
