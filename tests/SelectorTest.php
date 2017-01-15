@@ -27,7 +27,11 @@ class SelectorTest extends PHPUnit_Framework_TestCase
 
     public function test_invalid_mapping_throws_exception()
     {
-        $this->expectException('VirtualComplete\Selector\SelectorException');
+        if (method_exists($this, 'setExpectedException')) {
+            $this->setExpectedException('VirtualComplete\Selector\SelectorException');
+        } else {
+            $this->expectException('VirtualComplete\Selector\SelectorException');
+        }
         $selector = new \VirtualComplete\Selector\Example\Tests\InvalidSelector();
         $user['paymentMethod'] = 'credit';
         $selector->selectFrom($user);
